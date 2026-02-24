@@ -26,3 +26,5 @@ To solve this, I designed a multi-tier VPC architecture where the Application Lo
 
 3. Configured the EC2 instance's security group to only accept HTTP traffic if it physically comes from the ALB's security group. Direct access from the outside is completely blocked.
 
+![SG](images/inbound-security-group.jpg)
+
