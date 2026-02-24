@@ -37,7 +37,6 @@ To solve this, I designed a multi-tier VPC architecture where the Application Lo
 ```echo "Hello! I am super safe server from Private subnet"> /var/www/html/index.html ```
 
 
-
 5.Set up the ALB, attached the target group, and routed the DNS name to my server
 
 ![ALB](images/load-balancer.jpg)
