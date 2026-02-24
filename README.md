@@ -38,5 +38,12 @@ echo "<h1>Hello! I am super safe server from Private subnet</h1>" > /var/www/htm
 
 5.Set up the ALB, attached the target group, and routed the DNS name to my server
 
+![ALB](images/load-balancer.jpg)
+
+## Proof of Concept
+
+Web server successfully responding through the Load Balancer's public DNS, proving the private-to-public routing works:
+
+
 
 
