@@ -31,9 +31,13 @@ To solve this, I designed a multi-tier VPC architecture where the Application Lo
 4.Deployed the EC2 instance, connected via SSM (no SSH keys needed!), installed Apache, and created a simple HTML page.
 
 sudo su
+
 dnf update -y
+
 dnf install httpd -y
+
 systemctl enable --now httpd
+
 echo &quot;&amp;lt;h1&amp;gt;Hello! I am super safe server from Private subnet&amp;lt;/h1&amp;gt;&quot; &gt; /var/www/html/index.html
 
 5.Set up the ALB, attached the target group, and routed the DNS name to my server
