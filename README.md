@@ -28,3 +28,15 @@ To solve this, I designed a multi-tier VPC architecture where the Application Lo
 
 ![SG](images/inbound-security-group.jpg)
 
+4.Deployed the EC2 instance, connected via SSM (no SSH keys needed!), installed Apache, and created a simple HTML page.
+
+sudo su
+dnf update -y
+dnf install httpd -y
+systemctl enable --now httpd
+echo "<h1>Hello! I am super safe server from Private subnet</h1>" > /var/www/html/index.html
+
+5.Set up the ALB, attached the target group, and routed the DNS name to my server
+
+
+
