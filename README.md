@@ -38,7 +38,7 @@ dnf install httpd -y
 
 systemctl enable --now httpd
 
-echo &quot;&amp;lt;h1&amp;gt;Hello! I am super safe server from Private subnet&amp;lt;/h1&amp;gt;&quot; &gt; /var/www/html/index.html
+echo "Hello! I am super safe server from Private subnet"> /var/www/html/index.html
 
 5.Set up the ALB, attached the target group, and routed the DNS name to my server
 
