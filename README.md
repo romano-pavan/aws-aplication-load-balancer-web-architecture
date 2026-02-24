@@ -44,6 +44,8 @@ echo "<h1>Hello! I am super safe server from Private subnet</h1>" > /var/www/htm
 
 Web server successfully responding through the Load Balancer's public DNS, proving the private-to-public routing works:
 
+![website](images/accesed-website.jpg)
+
 
 
 
