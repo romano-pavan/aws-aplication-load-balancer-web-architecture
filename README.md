@@ -53,5 +53,15 @@ Web server successfully responding through the Load Balancer's public DNS, provi
 ![website](images/accesed-website.jpg)
 
 
+## Troubleshooting & Lessons Learned
+
+At one point, I deleted my NAT Gateway to save costs. When I recreated it later, my EC2 instance completely dropped offline in the AWS SSM console. It kept throwing a `RequestError: send request failed` error.
+
+I realized that recreating the NAT Gateway generated a new ID. My Private Route Table was still pointing to the old, deleted NAT ID (creating a blackhole route). Once I updated the route table with the new NAT Gateway ID, the connection was still hanging. A quick reboot of the EC2 instance forced the SSM service to restart, allowing it to finally regain internet access and reconnect to the AWS API.
+
+
+
+
+
 
 
