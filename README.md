@@ -11,8 +11,11 @@ To solve this, I designed a multi-tier VPC architecture where the Application Lo
 
 ## Tech Stack
 **Networking:** Amazon VPC, Internet Gateway, NAT Gateway, Route Tables.
+
 **Compute & Routing:** Amazon EC2 (Amazon Linux 2023), Application Load Balancer (ALB), Target Groups.
+
 **Security:** AWS IAM (Roles for SSM), strictly chained Security Groups.
+
 **Management:** AWS Systems Manager (SSM) Session Manager (Used for secure, keyless terminal access).
 
 ## Setup Process
