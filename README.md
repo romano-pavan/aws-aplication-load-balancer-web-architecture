@@ -22,5 +22,5 @@ To solve this, I designed a multi-tier VPC architecture where the Application Lo
 2. Configured the IGW for public subnets and a NAT Gateway so my private server could securely download the Apache packages.
 
 
-![AWS Architecture Diagram](images/my-safe-vpc.jpg)
+![VPC](images/my-safe-vpc.jpg)
 
