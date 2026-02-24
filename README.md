@@ -18,3 +18,4 @@ To solve this, I designed a multi-tier VPC architecture where the Application Lo
 ## Setup Process
 
 1. Created a custom VPC (10.0.0.0/16) with public and private subnets across two different Availability Zones to ensure high availability for the Load Balancer.
+2. Configured the IGW for public subnets and a NAT Gateway so my private server could securely download the Apache packages.
