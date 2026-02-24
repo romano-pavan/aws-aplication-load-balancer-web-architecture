@@ -30,15 +30,11 @@ To solve this, I designed a multi-tier VPC architecture where the Application Lo
 
 4.Deployed the EC2 instance, connected via SSM (no SSH keys needed!), installed Apache, and created a simple HTML page.
 
-sudo su
-
-dnf update -y
-
-dnf install httpd -y
-
-systemctl enable --now httpd
-
-echo "Hello! I am super safe server from Private subnet"> /var/www/html/index.html
+```sudo su```        
+```dnf update -y```             
+```dnf install httpd -y```
+```systemctl enable --now httpd```
+```echo "Hello! I am super safe server from Private subnet"> /var/www/html/index.html ```
 
 
 
